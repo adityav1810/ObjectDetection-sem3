@@ -1,0 +1,297 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+		<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	 -->
+	<meta charset="utf-8">
+	<title>Instancify</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link href="css/normalize.css" rel="stylesheet">
+	<link href="css/component.css" rel="stylesheet">
+	<link href="css/bootstrap-responsive.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="color/default.css" rel="stylesheet">
+
+	<link rel="shortcut icon" href="img/favicon.ico">
+	
+</head>
+
+<body>
+	<!-- navbar -->
+	<div class="navbar-wrapper">
+			<div class="navbar navbar-inverse navbar-fixed-top">
+				<div class="navbar-inner">
+					<div class="container">
+					<!-- Responsive navbar -->
+					<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+				</a>
+					<h1 class="brand"><a href="#"><img src="img/logo.ico" width="80" height="80"></a></h1>
+					<!-- navigation -->
+					<nav class="pull-right nav-collapse collapse">
+						<ul id="menu-main" class="nav">
+								<li><a title="services" href="#services">What we do</a></li>
+							<li><a title="team" href="#about">About Us</a></li>
+							
+							<li><a title="works" href="#works">Product</a></li>
+							<li><a title="blog" href="#blog">Team</a></li>
+							<li><a title="contact" href="#contact">Contact</a></li>
+					
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Header area -->
+	<div id="header-wrapper" class="header-slider">
+		<header class="clearfix">
+			<div class="logo">
+				<img src="img/logo.png" alt="" />
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="span12">
+						<div id="main-flexslider" class="flexslider">
+							<ul class="slides">
+								<li>
+									<p class="home-slide-content">
+										<strong>Instancify</strong> 
+									</p>
+								</li>
+								
+							
+							</ul>
+							<br><br><br><br><br><br><br><br><br>
+						</div>
+						<!-- end slider -->
+					</div>
+				</div>
+			</div>
+		</header>
+	</div>
+ 
+	
+	 
+	
+	<!-- section: services -->
+	<section id="services" class="section orange aligncenter ">
+		<div class="container">
+			<h4>Instancify- The Model</h4>
+			<!-- Four columns -->
+			<p>
+				 We have a Resnet 101 and Feature Pyramid Network and a ResNet101 based MASK- RCNN model running on our server which takes an image as an input.<br>
+				Our model has been trained on the MS-COCO dataset which has over a 1000 classes to be classify from.<br>
+				The input image is passed through the model and the model returns class names it finds in the image along with Bounding Boxes and Pixel to Pixel Level Masks.<br>
+				This makes our output more accurate than previous state of the art models like the Faster- RCNN, Fast-RCNN model.<br><br>
+
+				<img src="img/sc1.png">
+				<label>Here we see a how our weights tend to normalize after each epoch showing that we are attaing better accuracy</label>
+				<br><br>
+				
+				<img src="img/sc2.png">
+				<label>Here are the weights histogram for our model</label>
+
+			</p>
+		</div>
+	</section>
+	<!-- end section: services -->
+	<!-- section: team -->
+	<section id="about" class="section ">
+		<div class="container">
+			<h4>Technologies Used</h4>
+		
+				<div class="row ">
+					
+						<h2><strong>TensorFlow</strong></h2>
+						<p>
+							The most important library used in this project is Tensorflow. We can say that this is the base library for our Project. Tensorflow is a free and open-source software library for dataflow and differentiable programming across a range of tasks. It is a symbolic math library, and is used for machine learning applications such as neural networks.<br>
+							
+						</p>
+						<h2> <strong>Keras</strong></h2>
+						<p>
+							Keras follows best practices for reducing cognitive load: it offers consistent & simple APIs, it minimizes the number of user actions required for common use cases
+						</p>
+					
+				
+					<h2><strong>OpenCV</strong></h2>
+						<p>
+								OpenCV was built to provide a common infrastructure for computer vision applications and to accelerate the use of machine perception in the commercial products.
+						</p>
+						<h2><strong>NodeJS</strong></h2>
+						<p>Node.js is primarily used for non-blocking, event-driven servers, due to its single-threaded nature. It's used for traditional web sites and back-end API services, but was designed with real-time, push-based architectures in mind.</p>
+						
+				
+
+				</div>
+			
+			
+	
+		</div>
+		<!-- /.container -->
+	</section>
+	<!-- end section: team -->
+	<!-- section: works -->
+	<section id="works" class="section orange">
+		<div class="container clearfix">
+			<h4>Our Works</h4>
+			<!-- portfolio filter -->
+			
+			
+			<div class="row ">
+				<div class="span12 aligncenter">
+					<div id="portfolio-wrap center">
+
+							<form action="/upload" method="POST" enctype="multipart/form-data">
+								<div class="content">
+										<div class="box">
+												<input type="file" name="input" id="file-1" class="inputfile inputfile-1" data-multiple-caption="{count} files selected" multiple />
+												<label for="file-1"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17"><path d="M10 0l-5.2 4.9h3.3v5.1h3.8v-5.1h3.3l-5.2-4.9zm9.3 11.5l-3.2-2.1h-2l3.4 2.6h-3.5c-.1 0-.2.1-.2.1l-.8 2.3h-6l-.8-2.2c-.1-.1-.1-.2-.2-.2h-3.6l3.4-2.6h-2l-3.2 2.1c-.4.3-.7 1-.6 1.5l.6 3.1c.1.5.7.9 1.2.9h16.3c.6 0 1.1-.4 1.3-.9l.6-3.1c.1-.5-.2-1.2-.7-1.5z"/></svg> <span>Choose a file&hellip;</span></label>
+											</div>
+											<button type="submit" class="btn">Submit</button>
+								</div>
+
+
+
+
+
+
+<!-- EMERGENCY SITUATION -->
+								<!-- <div class="file-field input-field">
+								  <div class="btn grey">
+									<span></span>
+									<input name="input" type="file">
+								  </div>
+								  <div class="file-path-wrapper">
+									<input class="file-path validate" type="text">
+								  </div>
+								</div>
+								<button type="submit" class="btn">Submit</button> -->
+							  </form>
+					
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- spacer section 
+	<section class="spacer bg3">
+		<div class="container">
+			<div class="row">
+				<div class="span12 aligncenter flyLeft">
+					<blockquote class="large">
+						We are an established and trusted web agency with a reputation for commitment and high integrity
+					</blockquote>
+				</div>
+				<div class="span12 aligncenter flyRight">
+					<i class="icon-rocket icon-10x"></i>
+				</div>
+			</div>
+		</div>
+	</section>
+	end spacer section -->
+	<!-- section: blog -->
+	<section id="blog" class="section">
+		<div class="container">
+			<h4>Our Team</h4>
+			<div class="row">
+				<div class="span2 offset1 flyIn">
+					<div class="people">
+						<img class="team-thumb img-circle" src="img/aditya.png" alt="" />
+						<h3>Aditya Varshney</h3>
+						<h6>E18CSE010</h6>
+						<p>
+							ML Expert
+						</p>
+					</div>
+				</div>
+				<div class="span2 flyIn">
+					<div class="people">
+						<img class="team-thumb img-circle" src="img/bhavya.png" alt="" />
+						<h3>Bhavya Batra</h3>
+						<h6>E18CSE035</h6>
+						<p>
+							Backend Developer
+						</p>
+					</div>
+				</div>
+				<div class="span2 flyIn">
+					<div class="people">
+						<img class="team-thumb img-circle" src="img/anuska.png" alt="" />
+						<h3>Anushka Upadhayaya</h3>
+						<h6>E18CSE026</h6>
+						<p>
+							Lead Documentor
+						</p>
+					</div>
+				</div>
+				<div class="span2 flyIn">
+					<div class="people">
+						<img class="team-thumb img-circle" src="img/amit.png" alt="" />
+						<h3>Amit Patel</h3>
+						<h6>E18CSE013</h6>
+						<p>
+							FrontEnd Developer
+						</p>
+					</div>
+				</div>
+				<div class="span2 flyIn">
+					<div class="people">
+						<img class="team-thumb img-circle" src="img/arnav.png" alt="" />
+						<h3>Arnav Bansal </h3>
+						<h6>E18CSE028</h6>
+						<p>
+						Documentor
+						</p>
+					</div>
+				</div>
+	</section>
+
+	<!-- end spacer section -->
+	
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="span6 offset3">
+					<ul class="social-networks">
+						<li><a href="#"><i class="icon-circled icon-bgdark icon-instagram icon-2x"></i></a></li>
+						<li><a href="#"><i class="icon-circled icon-bgdark icon-twitter icon-2x"></i></a></li>
+						<li><a href="#"><i class="icon-circled icon-bgdark icon-dribbble icon-2x"></i></a></li>
+						<li><a href="#"><i class="icon-circled icon-bgdark icon-pinterest icon-2x"></i></a></li>
+					</ul>
+					<p class="copyright">
+						
+						<div class="credits">
+					
+							Designed with <3 . Team Instancify
+			</div>
+
+					</p>
+				</div>
+			</div>
+		</div>
+		<!-- ./container -->
+	</footer>
+	<a href="#" class="scrollup"><i class="icon-angle-up icon-square icon-bgdark icon-2x"></i></a>
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.scrollTo.js"></script>
+	<script src="js/jquery.nav.js"></script>
+	<script src="js/jquery.localScroll.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/jquery.prettyPhoto.js"></script>
+	<script src="js/isotope.js"></script>
+	<script src="js/jquery.flexslider.js"></script>
+	<script src="js/inview.js"></script>
+	<script src="js/animate.js"></script>
+	<script src="js/custom.js"></script>
+	<script src="contactform/contactform.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
